@@ -46,13 +46,12 @@ def send_message():
         message.body = MESSAGE_BODY
 
         #This is the part where we're gonna get the image data and process dat shit
-        received = request
+        received = request.get_data()
         of = ""
-        if received.files:
-            print(received.files.keys())
+        if received != b'':
+            print("received")
             # convert string of image data to uint8
-            file  = received.files['imageFile']
-            nparr = np.frombuffer(file.read(), np.uint8)
+            nparr = np.frombuffer(received, np.uint8)
             # decode image
             img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
             of = save_img(img)
