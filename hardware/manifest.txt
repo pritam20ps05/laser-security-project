@@ -1,0 +1,10 @@
+LIBRARIES:
+
+esp32cam -> https://github.com/yoursunny/esp32cam
+Wifi -> Built in to arduino IDE
+HTTPClient -> Probably built into arduino IDE (https://github.com/amcewen/HttpClient)
+
+BOARD:
+
+https://github.com/espressif/arduino-esp32
+Install the esp32 v2.0.2(Follow it strictly) and to install it into arduino IDE see https://espressif-docs.readthedocs-hosted.com/projects/arduino-esp32/en/latest/installing.html
