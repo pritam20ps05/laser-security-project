@@ -14,8 +14,8 @@ A school project model built to emphasis on our day to day security. In this mod
 10. Resistors 1k ohm
 ### The schematic
 ![Schematic_laser security system](https://user-images.githubusercontent.com/49360491/169693924-dbb8443f-4d83-4e35-9fcd-265c09d2c238.png)
-For higher resolution check the hardware folder
-Upload the esp32_cam.ino to the board and make the connections properly with the wifi.
+For higher resolution check the hardware folder   
+Upload the esp32_cam.ino to the board after updating all the dummy variables(wssid, wpass, server_url) and make the connections properly with the wifi.
 ## The Server
 The server is ready to go. Just add some env variables, enable DisplayCaptcha and Allow less secure apps to your sender gmail account and you are good to deploy
 ### Deploy
